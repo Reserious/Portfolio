@@ -6,6 +6,11 @@
 }
 .intro__inner {
     display: flex;
+    
+    position: relative;
+    
+    
+    background: url("../img/symbols.png")right bottom no-repeat;
     border-bottom: 1px solid #F1F1F1;
      padding-top: 100px;
     padding-bottom: 120px;
@@ -39,5 +44,8 @@
 }
 
 .intro__photo {
-    width: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
 }
