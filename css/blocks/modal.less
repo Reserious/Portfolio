@@ -1,10 +1,10 @@
 //main: ../style.less
 
 .modal {
-    display: flex;
+    display: none;
     width: 100%;
     height: 100%;
-    padding: 0 15px;
+    padding: 75px 75px;
     
     background-color: rgba(158, 158, 158, 0.69);
     
@@ -13,6 +13,10 @@
     left: 0;
     z-index: 1000;
     overflow: auto;
+    
+    &.show {
+        display: flex;
+    }
     
 }
 
@@ -23,6 +27,14 @@
     margin: auto;
     position: relative;
     background-color: @white;
+    
+    transform: scale(0);
+    transition: transform .2s linear;
+    
+    &--sm {
+        max-width: 900px;
+        
+    }
 }
 
 .modal__close {
@@ -50,6 +62,23 @@
 .modal__content {
     
     padding: 75px 15px;
+    
+}
+
+.modal__title {
+    margin-bottom: 54px;
+    font-size: 45px;
+    text-transform: uppercase;
+    color: @black;
+    font-weight: 700;
+    
+}
+
+.modal__suptitle {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: @black;
+    font-weight: 400;
     
 }
 
