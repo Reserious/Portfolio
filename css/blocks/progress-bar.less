@@ -17,6 +17,11 @@
 .progress-bar__right  {
     padding-left: 105px;
     position: absolute;
+    
+    @media @mobile-sm {
+        padding-left: 0;
+        margin-top: 15px;
+    }
    
 }
 
@@ -25,11 +30,20 @@
     height: 6px;
     background-color: @gray-light;
     border-radius: 5px;
+    
+    @media @mobile-sm {
+        width: 100px;
+        
+    }
 }
 
 .progress-bar__title {
     font-weight: 300;
     font-size: 14px;
+    
+    @media @mobile-sm {
+        line-height: 2;
+    }
     
 }
 

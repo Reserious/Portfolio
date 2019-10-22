@@ -1,5 +1,6 @@
 //main: ../style.less
 .intro {
+    margin-top: 100px;
    
     
     
@@ -12,12 +13,26 @@
     
     background: url("../img/symbols.png")right bottom no-repeat;
     border-bottom: 1px solid #F1F1F1;
-     padding-top: 100px;
+    padding-top: 100px;
     padding-bottom: 120px;
+    
+    @media @tablet {
+        
+    padding-top: 100px;
+    padding-bottom: 45px;
+        
+    background-size: 400px auto;
+        
+    }
 }
 
 .intro__content {
     width: 50%;
+    
+    @media @mobile-sm {
+        width: 100%;
+        margin-left: 15px;
+    }
 }
 
 .intro__suptitle {
@@ -34,6 +49,10 @@
     color: @black;
     font-weight: 700;
     
+    @media @tablet {
+        font-size: 35px;
+    }
+    
 }
 
 .intro__text {
@@ -48,4 +67,14 @@
     bottom: 0;
     right: 0;
     z-index: 1;
+    
+    @media @tablet {
+        width: 300px;
+        
+    }
+    @media @mobile-sm {
+        display: none;
+        
+    }
+    
 }

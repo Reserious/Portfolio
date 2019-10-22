@@ -1,3 +1,4 @@
+
 $(function() {
     
     const worksSlider =  $('[data-slider="slick"]');
@@ -132,9 +133,17 @@ $(function() {
            currentSlider.slick("slickNext");
         
     });
-		
     
+ /*Burger Menu===========================================================*/
     
+    const navToggle = $("#navToggle");
+    const nav = $("#nav");
     
+    navToggle.on("click", function(event) {
+        event.preventDefault();
         
+        nav.toggleClass("show");
+    });
+    
+		   
 });

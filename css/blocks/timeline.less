@@ -23,6 +23,16 @@
         
     }
     
+    @media @tablet {
+        margin: 35px auto;
+        
+    }
+    
+    @media @mobile-sm {
+        margin: 25px auto;
+    }
+    
+    
     
     
 }
@@ -33,10 +43,21 @@
         text-align:right;
         padding-right:44px; 
         
+        @media @mobile-sm {
+            text-align: left;
+            padding-right: 0;
+            
+            
+        }
+        
     }
     
     &--right {
         padding-left: 44px;
+        
+        @media @mobile-sm {
+            padding-left: 15px;
+        }
     }
     
 }
@@ -47,6 +68,11 @@
     font-weight: 700;
     color: @black;
     text-transform: uppercase;
+    
+    @media @mobile-sm {
+        
+        margin-bottom: 25px;
+}
 }
 
 .timeline__item {

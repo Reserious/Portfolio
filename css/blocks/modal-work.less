@@ -2,6 +2,7 @@
 
 .modal-work {
    display:flex;
+   
 }
 
 .modal-work__preview {
@@ -13,6 +14,16 @@
     width: 35%;
     padding: 50px 90px 100px 15px;
     position: relative;
+    
+    @media @tablet {
+        padding: 50px 15px;
+        
+    }
+    
+    @media @notebook {
+        padding: 50px 15px;
+        
+    }
     
     
    
@@ -29,6 +40,15 @@
     z-index: 1;
     transform: translate3d(-50%,-50%,0);
     
+    @media @tablet {
+    width: 465px;
+    height: 395px;
+    }
+    @media @notebook {
+    width: 465px;
+    height: 395px;
+    }
+    
     
 }
 
@@ -38,6 +58,14 @@
     color: @black;
     text-transform: uppercase;
     font-weight: 700;
+    
+    @media @tablet {
+        font-size: 23px;
+}
+    
+    @media @notebook {
+        font-size: 25px;
+    }
 }
 .modal-work__info {
     font-size: 16px;
@@ -47,6 +75,11 @@
 
 .modal-work__client {
     margin-bottom: 33px;
+    
+    @media @tablet {
+        margin-bottom: 30px;
+        
+    }
     
 }
 .modal-work__client-title {
@@ -67,6 +100,11 @@
     color: @gray;
     line-height: 2;
     font-weight: 300;
+    
+    @media @tablet {
+        
+        font-size: 10px;
+}
 }
 .modal-work__footer {
     width: 100%;

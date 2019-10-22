@@ -16,6 +16,12 @@
     
     &.show {
         display: flex;
+        
+        @media @tablet {
+            padding: 75px 15px
+            
+        }
+        
     }
     
 }
@@ -57,11 +63,22 @@
         
     }
     
+    @media @tablet {
+        width: 30px;
+        height: 30px;
+        padding: 4px;
+        
+}
+    
 }
 
 .modal__content {
     
     padding: 75px 15px;
+    
+    @media @tablet {
+        padding: 20px 15px;
+}
     
 }
 
@@ -71,6 +88,16 @@
     text-transform: uppercase;
     color: @black;
     font-weight: 700;
+    
+    @media @tablet {
+        
+        margin-bottom: 25px;
+    }
+    
+    @media @mobile-sm {
+        font-size: 30px;
+    
+    }
     
 }
 

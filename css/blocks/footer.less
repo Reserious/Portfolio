@@ -7,6 +7,7 @@
 }
 .footer__inner {
     display: flex;
+   
     justify-content: space-between;
 }
 
@@ -17,6 +18,10 @@
     font-size: 14px;
     font-weight: 700;
     border-right: 1px solid #8D8D8E;
+    
+    @media @mobile {
+        font-size: 8px;
+    }
 }
 .footer__credits {
     display: flex;
@@ -71,5 +76,13 @@
     display: flex;
     font-size: 14px;
     align-items: center;
+    
+    @media @mobile {
+        display: none;
+    }
+    @media @tablet {
+        font-size: 11px;
+        
+    }
 }
     

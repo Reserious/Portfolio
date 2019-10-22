@@ -2,6 +2,10 @@
 
 .about {
     margin: 120px 0;
+    
+    @media @mobile {
+        margin: 30px 0;
+    }
 }
 
 .about__inner {
@@ -12,7 +16,30 @@
 .about__photo,
 .about__content {
     width: 50%;
-    padding-left: 42px;
+    
+    @media @mobile {
+        width: 100%;
+    }
+    
+    
+   
+}
+
+.about__photo {
+    position: relative;
+    
+    img {
+        position: absolute;
+        bottom: 0;
+        z-index: 2;
+    }
+    
+    @media @mobile {
+        display: none;
+        
+    }
+    
+    
 }
 
 .about__title {
@@ -20,6 +47,13 @@
     text-transform: uppercase;
     font-weight: 700;
     color:@black;
+    
+    @media @notebook {
+        font-size: 35px;
+    }
+    @media @mobile {
+        text-align: center;
+    }
 }
 
 .about__bigtitle {
@@ -28,9 +62,18 @@
     left: -10px;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 92px;
+    font-size: 84px;
     color:fade(@black,15%);
     line-height: 1.1;
+    
+    @media @notebook {
+        font-size: 60px;
+    }
+    
+    @media @mobile {
+        font-size:53px;
+        text-align: center;
+    }
 }
 
 .about__text {
@@ -40,6 +83,11 @@
     font-weight: 300;
     
     margin-bottom: 40px;
+    
+    @media @tablet {
+        font-size: 10px;
+        line-height: 1.7;
+    }
     
 }
 

@@ -1,8 +1,33 @@
 //main: ../style.less
 .nav {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     height: 100%;
+    //Медиазапрос
+    
+    @media @mobile {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        z-index: 1000;
+        background-color: @white;
+        box-shadow: 0 5px 10px rgba(0,0,0, .3);
+        text-align: center;
+        
+        &.show {
+           display: flex; 
+            
+                
+            
+            
+        }
+        
+    }
 }
 .nav__link {
 
@@ -56,6 +81,13 @@
             
             
         }
+        
+    }
+    
+    @media @mobile {
+        width: 100%;
+        margin-left: 0;
+        padding: 7px 15px;;
         
     }
 }
