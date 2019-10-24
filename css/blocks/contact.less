@@ -8,10 +8,18 @@
 .contact__left {
     width: 50%;
     padding: 30px;
+    
+    @media @mobile-sm {
+        width: 100%;
+        padding: 10px 20px;
+    }
 }
 .contact__right {
     width: 50%;
-    background: url(https://placehold.it/450x700) center no-repeat;
+    background: url(https://placehold.it/450x700) center no-repeat; 
+    @media @mobile-sm {
+        display: none;
+    }
 
 }
 
@@ -50,5 +58,9 @@
     text-transform: uppercase;
     color: @black;
     font-weight: 700;
+    
+    @media @mobile-sm {
+        font-size: 30px;
+    }
 }
 
