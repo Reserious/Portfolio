@@ -12,23 +12,33 @@
 }
 .modal-work__content {
     width: 35%;
-    padding: 50px 90px 100px 15px;
+    padding: 70px 67px 122px 23px;
     position: relative;
     
     @media @tablet {
-        padding: 50px 15px;
+        padding:75px 30px 180px 23px;
         
     }
     
     @media @notebook {
-        padding: 50px 15px;
+       // padding: 50px 15px;
         
     }
     
     @media @mobile-sm {
-        padding: 10px 5px;
-        font-size: 12px;
+        padding: 55px 11px;
+        font-size: 11px;
     }
+    
+    @media @mobile-lt {
+        padding: 4px 5px;
+        font-size: 11px;
+    }
+    
+    @media @mobile-x {
+        padding:20px 10px;
+    }
+        
     
     
    
@@ -47,18 +57,20 @@
 
 .modal-work__photo {
     position: absolute;
+    max-width: 100%;
+    height: auto;
     top: 50%;
     left: 50%;
     z-index: 1;
     transform: translate3d(-50%,-50%,0);
     
     @media @tablet {
-    width: 465px;
-    height: 395px;
+    //width: 465px;
+    //height: 395px;
     }
     @media @notebook {
-    width: 465px;
-    height: 395px;
+    //width: 465px;
+    //height: 395px;
     }
     
     
@@ -129,6 +141,10 @@
     @media @mobile-sm {
         font-size: 12px;
     }
+    
+    @media @mobile-lt {
+            font-size: 10px;
+    }
 }
 .modal-work__text {
    //margin-bottom: 8.66rem;
@@ -146,6 +162,10 @@
     @media @mobile-sm {
         font-size: 9px;
         line-height: 1.4;
+    }
+    
+    @media @mobile-lt {
+        font-size: 8px;
     }
 }
 .modal-work__footer {
@@ -181,6 +201,9 @@
     @media @mobile-sm {
         
         font-size: 8px;
+      
     }
+    
+    
     
 }
