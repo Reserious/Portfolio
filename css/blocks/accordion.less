@@ -1,0 +1,93 @@
+//main: ../style.less
+
+.accordion {
+    width: 100%;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.accordion__item {
+    position: relative;
+    
+    &:active {
+        .heading {
+            color: @gray-light;
+        }
+        
+        .icon {
+            background-color: @gray-light;
+            
+            &:before {
+                background-color: @gray-light;
+            }
+            &:after {
+                width: 0;
+            }
+        }
+    }
+}
+
+.heading {
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: @black;
+    font-weight: 700;
+    font-size: 15px;
+    position: relative;
+    padding: 20px 20px 20px 50px;
+    transition: .3s ease-in-out;
+    
+    &:hover {
+        color: @gray;
+        .icon {
+            &:before,
+            &:after {
+                background-color:@gray;
+            }
+        }
+    }
+}
+
+.icon {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 45px;
+    height: 45px;
+    border: 2px solid @gray;
+    border-radius: 3px;
+    transform: translateY(-50%);
+    
+    &:before,
+    &:after {
+        content: ' ';
+        width: 1.25rem;
+        height: 0.25rem;
+        background: @black;
+        position: absolute;
+        border-radius: 3px;
+        left: 50%;
+        top:50%;
+        transition: .3s ease-in-out;
+        transform: translate(-50%, -50%);
+    }
+    
+    &:after {
+        transform: translate(-50%, -50%) 
+            rotate(90deg);
+        
+        z-index: -1;
+    }
+}
+
+.accordion__content {
+    display: none;
+    
+    p{
+        margin-top: 0;
+        
+    }
+}
