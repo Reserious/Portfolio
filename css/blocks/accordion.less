@@ -10,16 +10,18 @@
 .accordion__item {
     position: relative;
     
-    &:active {
+    &.active {
         .heading {
-            color: @gray-light;
+            color: @gray;
+           
         }
         
         .icon {
-            background-color: @gray-light;
+            background-color: white;
+            
             
             &:before {
-                background-color: @gray-light;
+                background-color: @gray;
             }
             &:after {
                 width: 0;
@@ -40,11 +42,13 @@
     transition: .3s ease-in-out;
     
     &:hover {
-        color: @gray;
+        color: @black;
         .icon {
             &:before,
             &:after {
                 background-color:@gray;
+                
+                
             }
         }
     }
@@ -61,6 +65,8 @@
     border-radius: 3px;
     transform: translateY(-50%);
     
+    
+    
     &:before,
     &:after {
         content: ' ';
@@ -74,7 +80,7 @@
         transition: .3s ease-in-out;
         transform: translate(-50%, -50%);
     }
-    
+   
     &:after {
         transform: translate(-50%, -50%) 
             rotate(90deg);
@@ -82,6 +88,8 @@
         z-index: -1;
     }
 }
+
+
 
 .accordion__content {
     display: none;
