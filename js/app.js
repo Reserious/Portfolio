@@ -215,3 +215,42 @@ $(function() {
         $('.accordion__item . accordion__content').not($content).slideUp('fast');
     });
     
+
+    // Отправка данных на сервер
+$('#form').trigger('reset');
+$(function() {
+  'use strict';
+  $('#form').on('submit', function(e) {
+    $('.msg').removeClass('error success');
+    $('input').removeClass('inputerror');
+    loadanim.play();
+    e.preventDefault();
+    $.ajax({
+      url: 'send.php',
+      type: 'POST',
+      contentType: false,
+      processData: false,
+      data: new FormData(this),
+        beforeSend:function () {
+            $("#send").prop("disabled" , true);
+        },
+      success: function(msg) {
+        console.log(msg);
+        if (msg == 'Ok') {
+          $('#form').trigger('reset');
+          $('.amount').text('Выберите файлы');
+          $('label').removeClass('active');
+          $('.msg').text('Сообщение успешно отправлено').addClass('success');
+          showmsg.restart();loadanim.duration(0.3).reverse();
+        } else {
+          if (msg == 'mailerror') {
+            $("#email").addClass('inputerror');
+          }
+          $('.msg').text('Ошибка. Сообщение не отправлено').addClass('error');
+          showmsg.restart();loadanim.duration(0.3).reverse();
+        }
+      }
+    });
+  });
+});
+
