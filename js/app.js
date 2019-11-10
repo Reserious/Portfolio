@@ -143,6 +143,7 @@ $(function() {
         event.preventDefault();
         
         nav.toggleClass("show");
+        document.getElementById('show').style.transition = 'all .25s ease-in-out';
     });
     
      /*Scroll*/
@@ -214,6 +215,18 @@ $(function() {
         $content.slideToggle(100);
         $('.accordion__item . accordion__content').not($content).slideUp('fast');
     });
+
+
+
+// Анимация сообщения о результате
+var showmsg = new TimelineMax();
+showmsg.add(TweenMax.to(".msg", 0.7, {opacity: 1,y: -40,ease: Expo.easeOut}));
+showmsg.add(TweenMax.to(".msg", 0.7, {opacity: 0,y: 0,ease: Expo.easeOut,delay: 2}));
+showmsg.pause();
+
+// Анимация плашки слова "подождите"
+var loadanim = TweenLite.to(".loading", 1, {autoAlpha: 0.8});
+loadanim.pause();
     
 
     // Отправка данных на сервер
