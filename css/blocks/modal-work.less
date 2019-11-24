@@ -12,12 +12,16 @@
 }
 .modal-work__content {
     width: 35%;
-    padding: 70px 67px 122px 23px;
+    padding: 70px 67px 186px 23px;
     position: relative;
     
-    @media @tablet {
-        padding:75px 30px 180px 23px;
+    @media @ipad-pro {
+        padding:70px 67px 40px 23px;
         
+    }
+    
+    @media @ipad {
+        padding: 70px 67px 25px 23px;
     }
     
     @media @notebook {
@@ -39,7 +43,20 @@
         padding:20px 10px;
     }
     
+    @media @mobile-600 {
+        padding: 40px 33px 12px 23px;
+    }
+    
     @media @mobile-xx {
+        padding: 27px 33px 12px 23px;
+    }
+    
+    @media @mobile-420 {
+        padding: 15px 7px 11px 7px;
+    }
+    
+    @media @mobile-350 {
+        padding: 0px 0px 0px 3px;
         
     }
 }
@@ -68,28 +85,18 @@
     z-index: 1;
     transform: translate3d(-50%,-50%,0);
     
-    @media @tablet {
-    //width: 465px;
-    //height: 395px;
-    }
-    @media @notebook {
-    //width: 465px;
-    //height: 395px;
-    }
-    
+   
     
 }
 
 .modal-work__title {
     margin-bottom: 3px;
-    font-size: 32px;
+    font-size: 40px;
     color: @black;
     text-transform: uppercase;
     font-weight: 700;
     
-    @media @tablet {
-        font-size: 23px;
-}
+ 
     
     @media @notebook {
         font-size: 25px;
@@ -98,14 +105,40 @@
     @media @mobile-sm {
         font-size: 12px;
     }
+    
+    @media @ipad {
+        font-size: 22px;
+    }
+    
+    @media @mobile-xx {
+        font-size: 17px;
+    }
+    
+    @media @mobile-x {
+        font-size: 15px;
+    }
+    @media @mobile-350 {
+        font-size: 12px;
+    }
 }
 .modal-work__info {
     font-size: 16px;
     color: @gray;
     text-transform:uppercase;
     
-    @media @mobile-sm {
-        display: none;
+    @media @mobile-xx {
+        font-size: 11px;
+    }
+    
+    @media @ipad {
+        font-size: 14px;
+    }
+    
+    @media @mobile-600 {
+        font-size: 12px;
+    }
+    @media @mobile-x {
+        font-size: 10px;
     }
 }
 
@@ -113,15 +146,19 @@
 
 .modal-work__client {
     margin-bottom: 33px;
-    
-    @media @tablet {
-        margin-bottom: 30px;
-        
-    }
+ 
     
     @media @mobile-sm {
         margin-bottom: 5px;
         
+    }
+    
+    @media @ipad {
+        margin-bottom: 20px;
+    }
+    
+    @media @mobile-600 {
+        margin-bottom: 15px;
     }
     
 }
@@ -135,10 +172,22 @@
         margin-bottom: 0;
         font-size: 12px;
     }
+    
+    @media @ipad {
+        font-size: 14px;
+    }
+    
+    @media @mobile-xx {
+        font-size: 12px;
+    }
+    
+    @media @mobile-x {
+        font-size: 10px;
+    }
 }
 
 .modal-work__client-company {
-    font-size: 14px;
+    font-size: 22px;
     font-style: italic;
     color: @gray;
     
@@ -149,19 +198,29 @@
     @media @mobile-lt {
             font-size: 10px;
     }
+    
+    @media @ipad {
+        font-size: 20px;
+    }
+    
+    @media @mobile-600 {
+        font-size: 17px;
+    }
+    @media @mobile-xx {
+        font-size: 12px;
+    }
+    @media @mobile-x {
+        font-size: 10px;
+    }
 }
 .modal-work__text {
    //margin-bottom: 8.66rem;
-    font-size: 12px;
+    font-size: 19px;
     color: @gray;
     line-height: 2;
     font-weight: 300;
     
-    @media @tablet {
-        
-        font-size: 10px;
-        line-height: 1.5;
-}
+  
     
     @media @mobile-sm {
         font-size: 9px;
@@ -170,6 +229,18 @@
     
     @media @mobile-lt {
         font-size: 8px;
+    }
+    
+    @media @ipad {
+        font-size: 14px;
+    }
+    
+    @media @mobile-600 {
+        font-size: 12px;
+    }
+    
+    @media @mobile-xx {
+        font-size: 10px;
     }
 }
 .modal-work__footer {
@@ -206,6 +277,17 @@
         
         font-size: 8px;
       
+    }
+    @media @mobile-600 {
+        font-size: 12px;
+    }
+    
+    @media @mobile-xx {
+        font-size: 10px;
+    }
+    
+    @media @mobile-x {
+        font-size: 8px;
     }
     
     
