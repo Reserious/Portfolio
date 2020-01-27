@@ -186,9 +186,9 @@ p {
   width: 57px;
   height: 57px;
 }
-.user__avatar img {
-  border-radius: 50%;
-}
+
+
+
 .user__content {
   padding-left: 9px;
 }
@@ -201,7 +201,7 @@ p {
 }
 .user__prof {
   font-size: 0.8rem;
-  color: rgba(43, 42, 44, 0.7);
+  color:#FF0303;
 }
 .nav {
   display: flex;
@@ -322,11 +322,12 @@ p {
 .intro__photo {
   position: absolute;
   bottom: 0;
-  right: 0;
+  right:45px;
   z-index: 1;
 }
 @media (max-width:991px) {
   .intro__photo {
+    top: 0 ;
     width: 300px;
   }
 }
@@ -348,6 +349,7 @@ p {
 .social__link:hover {
   transform: translateY(-7px);
   color: #2b2a2c;
+
 }
 .btn {
   display: inline-block;
@@ -541,6 +543,7 @@ p {
   position: relative;
   bottom: 0;
   z-index: 2;
+  right: 35px;
 }
 @media (max-width:767px) {
   .about__photo {
