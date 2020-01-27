@@ -1,7 +1,7 @@
 
-$(function() {
+
     
-    const worksSlider =  $('[data-slider="slick"]');
+   
     /*Filter=====================================================================================*/
     
     let filter = $("[data-filter]");
@@ -52,7 +52,7 @@ $(function() {
             
         },200);
         
-        worksSlider.slick('setPosition');
+        
             
     });
     //Закрытие
@@ -102,37 +102,7 @@ $(function() {
            
     });
     
-    /*Slider : https://kenwheeler.github.io/slick/
-    =============================*/
-    
-    
-  worksSlider.slick({
-  infinite: true,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  fade: true,
-  arrows :false,
-  dots:true 
-});
-    
-     $(".slickPrev").on("click",function(event) {
-        event.preventDefault();
-         
-         let currentSlider =
-         $(this).parents('.modal').find('[data-slider="slick"]');
-        
-        currentSlider.slick("slickPrev");   
-    });
-    
-      $(".slickNext").on("click",function(event) {
-        event.preventDefault();
-          
-           let currentSlider = 
-           $(this).parents('.modal').find('[data-slider="slick"]');
-        
-           currentSlider.slick("slickNext");
-        
-    });
+  
     
  /*Burger Menu===========================================================*/
     
@@ -190,7 +160,7 @@ $(function() {
 	});
     
 	
-    });
+    
     /*Accordion*/
     
     $('.accordion__item .heading ').on('click',function(e) {
@@ -267,3 +237,21 @@ $(function() {
   });
 });
 
+
+/*SLIDER OWL CAROUSEL*/
+
+$(document).ready(function(){
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    nav:true,
+    navText: [$('.am-next'),$('.am-prev')],
+    touchDrag:true,
+    autoPlay:true,
+    autoPlayTimeout:2000,
+    responsive:{
+        0:{
+            items:1
+        }    
+    }
+});
+ });

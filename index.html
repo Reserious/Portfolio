@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 	<link rel="stylesheet" href="css/style.css">
-	
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,300i,400,700&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/b8d74811b5.js"></script>
 	
@@ -11,6 +14,7 @@
 	<title>Portfolio</title>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+
 	
 </head>
 <body class="">
@@ -18,7 +22,7 @@
 <!-- Header -->
 <header class="header">
     <div class="container">
-        <div class="header__inner">
+        <div class="header__inner animated  bounceInRight delay-.5s">
             <a  href="#" class="user" data-scroll="#intro">
                 <div class="user__avatar"><img src="img/pepsi.png" width="57px" height="57px" alt=""></div>
                 <div class="user__content">
@@ -51,22 +55,17 @@
 
 <!-- Intro -->
 
- <a type="button" class="callback-bt" href="tel:+393894477132"target="_blank">
-    <div class="text-call">
-        <i class="fa fa-phone"></i>
-        <span>Call me</span>
-    </div>
-</a>
+
 
 <section class="intro" id="intro">
     <div class="container">
        
-        <div class="intro__inner">
+        <div class="intro__inner ">
             <div class="intro__content">
-                <h2 class="intro__suptitle">Hello I'm</h2>
-                <h1 class="intro__title">Illia Bugaiov</h1>
-                <div class="intro__text">Web Developer</div>
-                <div class="social">
+                <h2  class="intro__suptitle  animated  zoomInDown delay-.5s">Hello I'm</h2>
+                <h1 class="intro__title animated  zoomInRight delay-1s">Illia Bugaiov</h1>
+                <div class="intro__text animated  slideInLeft delay-1s">Web Developer</div>
+                <div class="social animated  rubberBand delay-1s">
                     <a class="social__link" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
                     <a class="social__link" href="https://www.facebook.com/ilia.bugaev" target="_blank"><i class="fab fa-facebook-square"></i></a>
                     <a class="social__link" href="https://www.instagram.com/re_serious/" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -74,8 +73,8 @@
                     <a class="social__link" href="https://telegram.me/<Reserious>" target="_blank"><i class="fab fa-telegram"></i></a>
                 </div>
                 
-                <button class="btn" type="button" href="#"  data-modal="#modal_hire_me"> hire ME</button>
-                <button class="btn" type="button" data-modal="#modal_resume">SEE MY RESUME</button>
+                <button class="btn animated  bounceInLeft delay-.5s" type="button" href="#"  data-modal="#modal_hire_me"> hire ME</button>
+                <button class="btn animated  bounceInRight delay-.5s" type="button" data-modal="#modal_resume">SEE MY RESUME</button>
             </div>
             <img class="intro__photo" src="img/photo.png" alt="">
         </div>  <!--/intro__inner -->
@@ -182,9 +181,16 @@
     </div> <!--Container-->
 </section>
 
+
+
+
+
+
 <!--Reviews-->
 <div class="reviews">
     <div class="container">
+
+
        
        <div class="reviews__item">
            <div class="reviews__text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat est consequat eu. Quisque aliquet a ipsum nec tincidunt. Nulla vitae rhoncus leo. Praesent dui sapien, bibendum quis tempus dictum.</p></div>
@@ -224,7 +230,7 @@
                <div class="articles__header">
                   <time class="articles__date">10 <br>june</time>
                   
-                      <img class="articles__photo" src="img/work/4.png" width="370px" height="257px" alt="">
+                      <img class="articles__photo" src="img/work/3.jpg" width="370px" height="257px" alt="">
                </div>
                
                    
@@ -351,205 +357,50 @@
 
 <!--Modals-->
  <div class="modal" id="modal_project_1">
-     <div class="modal__dialog">
-       
-       <button class="modal__close" type="button" data-close><img src="img/icon/modal-close.svg" alt="close"></button>
-        
-        <div class="modal-work">
-           <div class="modal-work__preview">
-            <div data-slider="slick">
-            <div>
-          <img class="modal-work__photo" src="img/work/mogo/11.png"  alt=""> 
-              </div>
-              <div>
-          <img class="modal-work__photo" src="img/work/mogo/2.png"  alt=""> 
-              </div>
-               <div>
-          <img class="modal-work__photo" src="img/work/mogo/3.png"  alt=""> 
-              </div>
-              <div>
-          <img class="modal-work__photo" src="img/work/mogo/4.png"  alt=""> 
-              </div>
-              <div>
-          <img class="modal-work__photo" src="img/work/mogo/5.png"  alt=""> 
-              </div>
-              <div>
-          <img class="modal-work__photo" src="img/work/mogo/6.png"  alt=""> 
-              </div>
-              <div>
-          <img class="modal-work__photo" src="img/work/mogo/7.png"  alt=""> 
-              </div>
-             
-              
-              
-               </div>
-           </div>
-           <div class="modal-work__content">
-              <div class="modal-work__header">
-               <h3 class="modal-work__title">Mogo</h3>
-               <div class="modal-work__info">
-                   Website | 2019
-               </div>
-               </div>
-               
-               <div class="modal-work__client">
-                   <div class="modal-work__client-title">Client:</div>
-                   <div class="modal-work__client-company">Creative Agency</div>
-               </div>
-              <div class="modal-work__text">
-                   
-                <p>Created for a creative agency </p>
-               </div>
-               
-               <div class="modal-work__footer">
-                   <button class="modal-work__btn slickPrev" type="button
-                   "><img src="img/icon/prev.svg" height="8px">
-                   Previous</button>
-                   <button class="modal-work__btn slickNext " type="button
-                   ">Next
-                   <img src="img/icon/next.svg" height="8px">
-                   </button>
-               </div>
-           </div>
-            
-        </div> <!--Modal-work-->
-         
-     </div> <!--Modal-dialog-->
+     
  </div> <!--Modal-->
  
  
  
   <div class="modal" id="modal_project_2">
-     <div class="modal__dialog">
-       
-       <button class="modal__close" type="button" data-close><img src="img/icon/modal-close.svg" alt="close"></button>
-        
-        <div class="modal-work">
-           <div class="modal-work__preview">
-            <div data-slider="slick">
-            <div>
-          <img class="modal-work__photo" src="img/work/fitness/11.png"  alt=""> 
-              </div>
-              <div>
-          <img class="modal-work__photo" src="img/work/fitness/2.png"  alt=""> 
-              </div>
-               <div>
-          <img class="modal-work__photo" src="img/work/fitness/3.png"  alt=""> 
-              </div>
-              <div>
-          <img class="modal-work__photo" src="img/work/fitness/4.png"  alt=""> 
-              </div>
-              <div>
-          <img class="modal-work__photo" src="img/work/fitness/5.png"  alt=""> 
-              </div>
-               <div>
-          <img class="modal-work__photo" src="img/work/fitness/6.png"  alt=""> 
-              </div>
-             
-        
-              
-              
-               </div>
-           </div>
-           <div class="modal-work__content">
-              <div class="modal-work__header">
-               <h3 class="modal-work__title">Fitness</h3>
-               <div class="modal-work__info">
-                   Website | 2019
-               </div>
-               </div>
-               
-               <div class="modal-work__client">
-                   <div class="modal-work__client-title">Client:</div>
-                   <div class="modal-work__client-company">Fitness Club</div>
-               </div>
-              <div class="modal-work__text">
-                   
-                <p>Created website for a Fitness Club</p>
-               </div>
-               
-               <div class="modal-work__footer">
-                   <button class="modal-work__btn slickPrev" type="button
-                   "><img src="img/icon/prev.svg" height="8px">
-                   Previous</button>
-                   <button class="modal-work__btn slickNext " type="button
-                   ">Next
-                   <img src="img/icon/next.svg" height="8px">
-                   </button>
-               </div>
-           </div>
-            
-        </div> <!--Modal-work-->
-         
-     </div> <!--Modal-dialog-->
- </div> <!--Modal-->
- 
- 
- 
- 
+
+    
+
+    </div>
+
+
   
- 
+
    <div class="modal" id="modal_project_3">
-     <div class="modal__dialog">
-       
-       <button class="modal__close" type="button" data-close><img src="img/icon/modal-close.svg" alt="close"></button>
-        
-        <div class="modal-work">
-           <div class="modal-work__preview">
-            <div data-slider="slick">
-            <div>
-          <img class="modal-work__photo" src="img/work/barber/1.png"  alt=""> 
-              </div>
-              <div>
-          <img class="modal-work__photo" src="img/work/barber/2.png"  alt=""> 
-              </div>
-               <div>
-          <img class="modal-work__photo" src="img/work/barber/3.png"  alt=""> 
-              </div>
-              <div>
-          <img class="modal-work__photo" src="img/work/barber/4.png"  alt=""> 
-              </div>
-              <div>
-          <img class="modal-work__photo" src="img/work/barber/5.png"  alt=""> 
-              </div>
-             
-        
-              
-              
-               </div>
-           </div>
-           <div class="modal-work__content">
-              <div class="modal-work__header">
-               <h3 class="modal-work__title">Barber</h3>
-               <div class="modal-work__info">
-                   website | 2019
-               </div>
-               </div>
-               
-               <div class="modal-work__client">
-                   <div class="modal-work__client-title">Client:</div>
-                   <div class="modal-work__client-company">Barber Shop</div>
-               </div>
-              <div class="modal-work__text">
-                   
-                <p>Created website for a Barber Shop</p>
-               </div>
-               
-               <div class="modal-work__footer">
-                   <button class="modal-work__btn slickPrev" type="button
-                   "><img src="img/icon/prev.svg" height="8px">
-                   Previous</button>
-                   <button class="modal-work__btn slickNext " type="button
-                   ">Next
-                   <img src="img/icon/next.svg" height="8px">
-                   </button>
-               </div>
-           </div>
-            
-        </div> <!--Modal-work-->
-         
-     </div> <!--Modal-dialog-->
- </div> <!--Modal-->
+
+    <div class="modal__dialog">
+    
+  <div class="owl-carousel owl-theme">
+  
+  <div class="carousel__item"><img src="img/work/barber/1.png"></div>
+  <div class="carousel__item"><img src="img/work/barber/2.png"></div>
+  <div class="carousel__item"><img src="img/work/barber/3.png"></div>
+  <div class="carousel__item"><img src="img/work/barber/4.png"></div>
+  <div class="carousel__item"><img src="img/work/barber/5.png"></div>
+  <div class="carousel__item"><img src="img/work/barber/6.png"></div>
+  <div class="carousel__item"><img src="img/work/barber/7.png"></div>
+</div>
+
+
+  <button class="am-next"><img src="img/icon/prev.svg" width="30px" height="30px"></button>
+  <button class="am-prev"><img src="img/icon/next.svg" width="30px" height="30px"></button>
+
+
+
+    </div>
+</div>
+ 
+
+
+
+
+
+
  
  
  
@@ -587,6 +438,14 @@
           
           <div class="timeline__col timeline__col--right">
                <h4 class="timeline__title">Education</h4>
+
+                   <div class="timeline__item">
+                  <div class="timeline__date">2019</div>
+                  <h5 class="timeline__suptitle">Digital Marketing</h5>
+                  
+                  <div class="timeline__position">Google digital training</div>
+                 
+              </div>
                
                    <div class="timeline__item">
                   <div class="timeline__date">2019</div>
@@ -675,6 +534,42 @@
                      
                      <div class="progress-bar__bar">
                          <div class="progress-bar__progress" style="width:40%"></div>
+                     </div>
+                    
+                  </div>
+                  
+                  
+                  </div>
+
+                   <div class="progress-bar__item">
+                  <div class="progress-bar__left">
+                      
+                      <div class="progress-bar__title">
+                          PHP
+                      </div>
+                  </div>
+                  <div class="progress-bar__right">
+                     
+                     <div class="progress-bar__bar">
+                         <div class="progress-bar__progress" style="width:30%"></div>
+                     </div>
+                    
+                  </div>
+                  
+                  
+                  </div>
+
+                  <div class="progress-bar__item">
+                  <div class="progress-bar__left">
+                      
+                      <div class="progress-bar__title">
+                          Wordpress
+                      </div>
+                  </div>
+                  <div class="progress-bar__right">
+                     
+                     <div class="progress-bar__bar">
+                         <div class="progress-bar__progress" style="width:60%"></div>
                      </div>
                     
                   </div>
@@ -770,9 +665,13 @@
  
  
  <!--JS-->
- <script src="js/slick.min.js"></script>
+ 
  <script src="js/TweenMax.min.js"></script>
-<script src="js/app.js"></script>
+ <script src="js/app.js"></script>
+ 
+ <script src="js/jquery-3.2.1.min.js"></script>
+ <script src="js/owl.carousel.min.js"></script>
+
 
 
  
