@@ -445,10 +445,10 @@ p {
   }
 }
 .portfolio__col {
-  flex-basis: 33.33333%;
+  flex-basis:25%;
   padding: 22px;
 }
-@media (max-width:767px) {
+@media (max-width:768px) {
   .portfolio__col {
     flex-basis: 50%;
   }
