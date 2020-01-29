@@ -243,15 +243,32 @@ $(function() {
 $(document).ready(function(){
 $('.owl-carousel').owlCarousel({
     loop:true,
-    nav:true,
+    nav:false,
     navText: [$('.am-next'),$('.am-prev')],
     touchDrag:true,
-    autoPlay:true,
-    autoPlayTimeout:2000,
+    autoplay:true,
+    autoplayTimeout:6000,
+    smartSpeed:2000,
     responsive:{
         0:{
             items:1
         }    
     }
 });
- });
+
+ $('.slider__two').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    touchDrag:true,
+    autoplay:true,
+    autoplayTimeout:2000,
+    smartSpeed:2000,
+    responsive:{
+      0:{
+        items:1
+       }
+     } 
+
+   });
+});
