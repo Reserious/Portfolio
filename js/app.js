@@ -263,6 +263,7 @@ $('.owl-carousel').owlCarousel({
     touchDrag:true,
     autoplay:true,
     autoplayTimeout:2000,
+    autoplayHoverPause:true,
     smartSpeed:2000,
     responsive:{
       0:{
