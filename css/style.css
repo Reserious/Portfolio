@@ -596,7 +596,7 @@ p {
 }
 @media (max-width:991px) {
   .about__text {
-    font-size: 10px;
+    font-size: 13px;
     line-height: 1.7;
   }
 }
